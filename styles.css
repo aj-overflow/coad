@@ -1,0 +1,20 @@
+body {
+	background-image: url("https://cdn.discordapp.com/attachments/1166891687784763442/1304763361510293544/BG3.png?ex=67309312&is=672f4192&hm=7b6dcae158f1f0c7d4504cdf3f8c51b8bbf3e1a94f0350768f223c26805941d4&");
+	image-rendering: pixelated;
+}
+
+i meant like the whole thing 
+/* You can combine these into 1 with commas */
+h1, p {
+	text-align: center;
+}
+
+div > * {
+	animation: spin 950000ms linear infinite;
+	text-align: center;
+}
+@keyframes spin {
+	to {
+		transform: rotate(-360deg);
+	}
+}
