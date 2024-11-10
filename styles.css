@@ -11,7 +11,7 @@
   }
 
 body {
-	background-image: url("https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp");
+	background-color:#008080;
 	image-rendering: pixelated;
 	font-family: Minecraft;
 	overflow-x: hidden; 
@@ -38,8 +38,8 @@ body {
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	top: 70%;
-	right: -27vw;
+	top: 80%;
+	right: -25vw;
 }
 
 
