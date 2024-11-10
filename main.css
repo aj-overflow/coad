@@ -1,7 +1,32 @@
 @font-face {
 	font-family: "Minecraft";
-	src: url("./fonts/mojangles.ttf");
+	src: url("./media/fonts/mojangles.ttf");
 }
+body {
+	background-color:#008080;
+	font-family: Minecraft;
+	overflow-x: hidden; 
+}
+p {
+	margin: 0;
+}
+
+
+
+#title {
+	font-family: monospace;
+	font-size: 70px;
+	font-weight: bolder;
+}
+#title > p { 
+	white-space: pre;
+}
+
+
+
+
+
+
 
 .center {
 	display: block;
@@ -10,11 +35,6 @@
 	width: 50%;
   }
 
-body {
-	background-color:#008080;
-	font-family: Minecraft;
-	overflow-x: hidden; 
-}
 
 
 .title-wrapper {

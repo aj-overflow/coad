@@ -1,16 +1,16 @@
-window.onload = function() {
+window.onload = function () {
 	generateNewSplash();
 
-}
+};
 // ily :3 -aj
 // ily :3 -ava
 
-generateNewSplash = function() {	
-	// 
+generateNewSplash = function () {
+	//
 	const splashes = [
 		"Also play Half-Life!",
 		"beautiful big titty butt naked women dont fall out the sky you know",
-		"aj wuz heer",
+		"aj weezeer",
 		"I LOVE AJJJJJ - awa",
         "42",
         "lllloooonnnnggggtttteeeexxxxtttt",
@@ -22,10 +22,10 @@ generateNewSplash = function() {
 	];
 
 	const randomSplash = splashes[Math.floor(Math.random() * splashes.length)];
-	const splashElement = document.getElementById("splash");	
+	const splashElement = document.getElementById("splash");
 
 	splashElement.innerText = randomSplash;
 
-	// 
+	//
 	splashElement.style.fontSize = 50 - randomSplash.length + "px";
-}
+};
