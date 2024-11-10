@@ -1,20 +1,93 @@
+@font-face {
+	font-family: "Minecraft";
+	src: url("./fonts/mojangles.ttf");
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
 body {
-	background-image: url("https://cdn.discordapp.com/attachments/1166891687784763442/1304763361510293544/BG3.png?ex=67309312&is=672f4192&hm=7b6dcae158f1f0c7d4504cdf3f8c51b8bbf3e1a94f0350768f223c26805941d4&");
+	background-image: url("https://qph.cf2.quoracdn.net/main-qimg-1d52bb961c819d4589245f44e3320b8c.webp");
 	image-rendering: pixelated;
+	font-family: Minecraft;
+	overflow-x: hidden; 
 }
 
-i meant like the whole thing 
+
+.title-wrapper {
+	margin-inline: auto;
+	position: relative;
+	width: 60%;
+}
+.title-wrapper > img {   
+	width: 100%;
+}
+.title-wrapper > p {
+	margin: 0;
+	color:yellow;
+	
+	/* Make the left margin as big as possible, effictivley pushing the text to the right */
+	margin-left: auto;
+	width: fit-content;
+
+	/* postion: relative will make any changes to the position relative to the current position instead of page*/
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 70%;
+	right: -27vw;
+}
+
+
+
+
 /* You can combine these into 1 with commas */
-h1, p {
+h1, p, div {
 	text-align: center;
 }
 
-div > * {
-	animation: spin 950000ms linear infinite;
-	text-align: center;
+
+
+
+.foooter {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+
+    /* Makes it follow the view while scrolling */
+    position: fixed; 
+
+    /* Display on top of everything (unless you have something with a higher z-index) */
+    z-index: 999;
 }
-@keyframes spin {
-	to {
-		transform: rotate(-360deg);
-	}
+/* Selects all img elements that are a child of a 'footer' */
+.foooter img  {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* 
+You should take the current spin animation out of the 'div' selector as that will make it apply to 
+all divs, including this one which you probably don't want. 
+Then with this you can add the  class="spin"  attribute to anything you want to spin 
+*/
+.spin * {
+    animation: spin 95000ms linear infinite; }
+    @keyframes spin { to { transform:rotate(-360deg); }
+}
+
+/* Alternite animaton using alternate to go back and forth >:3 */
+.rock {
+    animation: rock 2900ms ease-in-out infinite alternate;
+}
+@keyframes rock { 
+    from { transform: rotate(-20deg); } 
+    to { transform:rotate(20deg); }
 }
