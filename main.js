@@ -17,7 +17,8 @@ generateNewSplash = function() {
         "tell em to bring out the whole ocean 🦀🐟🐠🐡🦈🦦🐬🦭🐳🐋🐙🦑🦐🐚🪸🪼🐌",
         "Also play garn47, in theaters, ITS AWESOME!",
         "Also play Slime Rancher!",
-        "Also play Slime Rancher 2!"
+        "Also play Slime Rancher 2!",
+		"Nier: Automata looks cool",
 	];
 
 	const randomSplash = splashes[Math.floor(Math.random() * splashes.length)];
